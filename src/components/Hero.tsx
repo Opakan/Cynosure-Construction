@@ -1,13 +1,15 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, ChevronDown } from 'lucide-react';
+import heroImg from '../assets/images/hero_architecture_golden_hour_1779204498948.png';
+import statsImg from '../assets/images/modern_luxury_home_1779204534107.png';
 
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
       <div className="absolute inset-0 z-0">
         <img 
-          src="/src/assets/images/hero_architecture_golden_hour_1779204498948.png"
+          src={heroImg}
           alt="Cinematic Architecture"
           className="w-full h-full object-cover opacity-60 scale-110 blur-[2px]"
           referrerPolicy="no-referrer"
@@ -68,7 +70,7 @@ export default function Hero() {
            <div className="absolute inset-0 bg-gradient-to-l from-black/60 to-transparent z-10"></div>
            <div className="relative aspect-[4/5] bg-brand-gray border border-brand-gold/10 transform rotate-6 shadow-2xl flex flex-col justify-end p-12 overflow-hidden">
               <div className="absolute inset-0 opacity-20">
-                 <img src="/src/assets/images/modern_luxury_home_1779204534107.png" className="w-full h-full object-cover" alt="" />
+                 <img src={statsImg} className="w-full h-full object-cover" alt="" referrerPolicy="no-referrer" />
               </div>
               <div className="relative z-20 border-l-2 border-brand-gold pl-6 mb-8">
                  <div className="text-6xl font-bold text-brand-white mb-2">128+</div>
@@ -80,6 +82,7 @@ export default function Hero() {
            </div>
         </div>
       </div>
+
 
       <motion.div 
         initial={{ opacity: 0 }}

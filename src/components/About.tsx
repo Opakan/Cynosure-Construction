@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Shield, Target, Award, Users } from 'lucide-react';
+import workspaceImg from '../assets/images/architectural_workspace_1779204555572.png';
 
 const stats = [
   { label: 'Projects Completed', value: '150+' },
@@ -22,7 +23,7 @@ export default function About() {
         >
           <div className="aspect-[4/5] relative z-10 overflow-hidden">
             <img 
-              src="/src/assets/images/architectural_workspace_1779204555572.png"
+              src={workspaceImg}
               alt="Architectural Workspace"
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
               referrerPolicy="no-referrer"

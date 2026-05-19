@@ -1,17 +1,19 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import luxuryHomeImg from '../assets/images/modern_luxury_home_1779204534107.png';
+import commercialImg from '../assets/images/luxury_commercial_building_1779204516114.png';
 
 const projects = [
   {
     title: 'The Eminence Estate',
     category: 'Luxury Residential',
-    img: '/src/assets/images/modern_luxury_home_1779204534107.png',
+    img: luxuryHomeImg,
     desc: 'A collection of 15 ultra-modern smart homes featuring sustainable energy solutions and premium architectural finishing.'
   },
   {
     title: 'Cynosure Business Plaza',
     category: 'Commercial Excellence',
-    img: '/src/assets/images/luxury_commercial_building_1779204516114.png',
+    img: commercialImg,
     desc: 'An iconic glass-facade commercial hub in the heart of the business district, designed for performance and prestige.'
   }
 ];
