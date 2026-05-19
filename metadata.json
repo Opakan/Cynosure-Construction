@@ -1,0 +1,6 @@
+{
+  "name": "Cynosure Construction Limited",
+  "description": "Premium cinematic architectural showcase for a modern construction company specializing in residential and commercial excellence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

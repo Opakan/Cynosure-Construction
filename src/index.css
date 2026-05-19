@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-gold: #C5A059;
+  --color-brand-black: #0D0D0D;
+  --color-brand-gray: #1A1A1A;
+  --color-brand-concrete: #888888;
+  --color-brand-white: #F2F2F2;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-black text-brand-white font-sans antialiased selection:bg-brand-gold selection:text-brand-black overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-brand-white tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-brand-black/90 backdrop-blur-md border border-white/5;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #C5A059 0%, #E2C281 50%, #A37F3D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes sweep {
+    0% { transform: translateX(-100%) skewX(-12deg); }
+    100% { transform: translateX(200%) skewX(-12deg); }
+  }
+
+  .animate-sweep {
+    animation: sweep 2s infinite linear;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-brand-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-gold/20 rounded-full hover:bg-brand-gold/50 transition-colors;
+}
+
+.skew-card {
+  transform: rotate(2deg);
+  transition: transform 0.5s ease-out;
+}
+
+.skew-card:hover {
+  transform: rotate(0deg);
+}
+
+#root {
+  height: 100%;
+}
+
